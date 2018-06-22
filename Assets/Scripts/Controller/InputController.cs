@@ -7,7 +7,7 @@ public class InputController : MonoBehaviour {
     public float vertical;
     public float horizontal;
     public Vector2 mouseInput;
-    public bool fire1;
+    public bool fire;
     public bool reload;
 
     // Use this for initialization
@@ -21,7 +21,7 @@ public class InputController : MonoBehaviour {
         horizontal = Input.GetAxis("Horizontal");
         mouseInput = new Vector2(Input.GetAxisRaw("Mouse X")
             , Input.GetAxisRaw("Mouse Y"));
-        fire1 = Input.GetButton("Fire1");
+        fire = Input.GetButton("Fire1");
         reload = Input.GetKey(KeyCode.R);
     }
 }

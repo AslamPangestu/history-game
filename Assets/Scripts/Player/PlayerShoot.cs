@@ -13,9 +13,9 @@ public class PlayerShoot : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (GamesManager.Instance.InputController.fire1)
+        if (GamesManager.Instance.InputController.fire)
         {
-            senapan.Fire();
+            senapan.Shoot();
         }
 	}
 }

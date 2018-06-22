@@ -4,24 +4,20 @@ using UnityEngine;
 
 public class Senapan : Shooter {
 
-    public override void Fire()
+    public override void Shoot()
     {
-        base.Fire();
+        base.Shoot();
         if (canFire)
         {
             print("shoot");
         }
     }
-    // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    void Update()
+    {
         if (GamesManager.Instance.InputController.reload)
         {
             Reload();
         }
-	}
+    }
 }
